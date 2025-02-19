@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Woogie Click</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="./image/logo/flutter.svg" type="image/svg">
+   
+</head>
+
+<body>
+
+   <div class="registration">
+
+      <!-- bacground -->
+
+      <div class="bacground">
+         <img class="bacground bacground_shapes_right" src="./image/Bacground/Ellipse.png">
+         <img class="bacground bacground_shapes_left" src="./image/Bacground/BG.png">
+      </div>
+
+      <!-- bacground -->
+
+      <!-- registration_form -->
+
+      <div class="registration_elements">
+
+         <div class="registration_elements__registration_form">
+
+            <img class="logo" src="./image/logo/flutter.svg" alt="">
+
+            <p class="registration_form__registration_form_header">Please fill out the registration form</p>
+
+            <form action="#">
+
+               <label for="email">Email adress</label>
+               <input type="email" pattern="[a-zA-Z0-9._%+-]+@(gmail\.com|mail\.ru)$" id="email" required>
+
+               <label for="password">Password</label>
+               <input type="password" minlength="5" id="password">
+               <i class="icon" id="toggle-password"><img src="./image/input/eye-slash.svg"></i>
+
+               <a href="#">forgot password?</a>
+
+               <button class="registration_form__sing_in">sign in</button>
+
+            </form>
+
+
+         </div>
+
+      </div>
+
+      <!-- registration_form -->
+
+   </div>
+
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>

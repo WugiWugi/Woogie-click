@@ -1,0 +1,146 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* bacground */
+
+.bacground {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(33, 72, 192);
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+
+.bacground.bacground_shapes_right {
+    position: absolute;
+    top: 49%;
+    width: 35%;
+    height: 51%;
+    z-index: -1;
+}
+
+.bacground.bacground_shapes_left {
+    position: absolute;
+    left: 55%;
+    width: 45%;
+    height: 80%;
+}
+
+
+/* bacground */
+
+/* registration_form */
+
+.registration_elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.registration_elements__registration_form {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 550px;
+    width: 800px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+}
+
+.logo {
+    background-color: rgb(255, 255, 255);
+
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+.registration_form__registration_form_header {
+    align-self: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+label {
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+input {
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    height: 50px;
+    width: 780px;
+    font-size: 20px;
+    background-color: #F5F5F5;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+input:valid:focus{
+    border-color: green;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(255, 0, 0); /* Или любой другой эффект */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+
+#password {
+    position: relative;
+    width: 91.2%;
+    padding: 0px 60px 0px 10px;
+}
+
+form {
+    position: relative;
+}
+
+.icon {
+    cursor: pointer;
+    position: absolute;
+    top: 59%;
+    right: 2%;
+}
+
+a {
+    position: relative;
+    top: 3%;
+    left: 80.9%;
+    color: #666666;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.registration_form__sing_in {
+    cursor: pointer;
+    margin-top: 40px;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(33, 72, 192);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border-color: rgb(33, 72, 192);
+}
+
+/* registration_form */
