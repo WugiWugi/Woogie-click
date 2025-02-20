@@ -32,7 +32,7 @@ function toggleSwitch() {
     background.style.backgroundColor = "rgb(32, 32, 32)"; 
     
     shapeRight.style.backgroundColor = "rgb(109, 109, 109)";
-    shapeRight2.style.backgroundColor = "rgb(172, 172, 172)";
+    shapeRight2.style.backgroundColor = "rgb(32, 32, 32)";
     shapeLeft.querySelector('path').setAttribute('fill', 'rgb(109, 109, 109)'); 
     /* background */
     signInButton.style.backgroundColor = "#161616";
@@ -44,7 +44,7 @@ function toggleSwitch() {
     background.style.backgroundColor = "rgb(33, 72, 192)";  
     
     shapeRight.style.backgroundColor = "#264ECA";
-    shapeRight2.style.backgroundColor = "#264ECA";
+    shapeRight2.style.backgroundColor = "rgb(33, 72, 192)";
     shapeLeft.querySelector('path').setAttribute('fill', '#264ECA');
     /* background */
     signInButton.style.backgroundColor = "rgb(33, 72, 192)";
