@@ -5,30 +5,45 @@
 
 /* bacground */
 
-.bacground {
+.background{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(33, 72, 192);
+    background-color: #2148c0;
     position: absolute;
+    overflow: hidden;
     z-index: -1;
-
 }
 
 
-
-.bacground.bacground_shapes_right {
+.bacground_shapes_right {
+    background-color: #264ECA;
     position: absolute;
-    top: 49%;
-    width: 35%;
-    height: 51%;
-    z-index: -1;
+    bottom: -22%;
+    left: -5%;
+    border-radius: 100%;
+    width: 40%;
+    height: 75%;
+    
+}
+
+.bacground_shapes_right2{
+    background-color: #2148c0;
+    position: absolute;
+    bottom: -22%;
+    left: -5%;
+    border-radius: 100%;
+    width: 27%;
+    height: 45%;
+
 }
 
 .bacground.bacground_shapes_left {
     position: absolute;
-    left: 55%;
+    right: 0%;
+    top: -1%;
     width: 45%;
     height: 80%;
+
 }
 
 
@@ -44,6 +59,43 @@
     height: 100vh;
 }
 
+/* button */
+
+.toggle {
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(33, 72, 192);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.toggle:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle.checked {
+    background-color: #161616;
+}
+
+.toggle.checked:before {
+    transform: translateX(30px);
+}
+
+
+/* button */
+
 .registration_elements__registration_form {
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -56,15 +108,12 @@
 }
 
 .logo {
-    background-color: rgb(255, 255, 255);
-
+    color: rgb(33, 72, 192);
     align-self: center;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
     padding: 20px;
 }
-
 
 .registration_form__registration_form_header {
     align-self: center;
@@ -89,19 +138,22 @@ input {
     width: 780px;
     font-size: 20px;
     background-color: #F5F5F5;
-    border: 1px solid;
+    border: 1px solid rgb(207, 207, 207);
     border-radius: 10px;
 }
 
-input:valid:focus{
+input:valid:focus {
+    outline: none;
     border-color: green;
+    box-shadow: 0 0 5px green;
 }
 
-input:focus {
+input:invalid:focus {
     outline: none;
-    border: 2px solid rgb(255, 0, 0); /* Или любой другой эффект */
+    border: 2px solid rgb(255, 0, 0);
+    /* Или любой другой эффект */
     box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-  }
+}
 
 #password {
     position: relative;
