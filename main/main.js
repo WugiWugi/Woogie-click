@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const isChecked = toggleSwitch.classList.contains("checked");
       
       document.querySelector(".gif").style.background = isChecked 
-          ? 'url("/main/image/gif/971c050e35973418a2dcd26a13db62419bfa6f73a48271256942b3ad7edb76e2.gif")' 
-          : 'url("/main/image/gif/1e966e1e40f196f9f97159a99584e75feab88331104263f093a319b9f7451e56.gif")';
+          ? 'url("./image/gif/971c050e35973418a2dcd26a13db62419bfa6f73a48271256942b3ad7edb76e2.gif")' 
+          : 'url("./image/gif/1e966e1e40f196f9f97159a99584e75feab88331104263f093a319b9f7451e56.gif")';
       
       document.body.style.backgroundColor = isChecked ? "rgb(32, 32, 32)" : "#2148c0";
       
