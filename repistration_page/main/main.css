@@ -5,8 +5,55 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #2148c0;
+    z-index: -1;
+    
 }
 
+/* button */
+
+.toggle {
+    position: absolute;
+
+    width: 60px;
+    height: 30px;
+    background-color: rgb(33, 72, 192);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.toggle:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle.checked {
+    background-color: #161616;
+}
+
+.toggle.checked:before {
+    transform: translateX(30px);
+}
+
+
+/* button */
+
+.gif{
+    position: absolute;
+        height: 100%;
+        width: 100%;
+
+    background: url("/main/image/gif/1e966e1e40f196f9f97159a99584e75feab88331104263f093a319b9f7451e56.gif");
+       z-index: -1;
+}
 
 
 .container {
@@ -56,4 +103,10 @@ body {
     align-items: center;
     background-color: rgb(255, 255, 255);
     margin: 50px 0px 50px 0px;
+}
+
+.placeholder-img{
+    width: 100%;
+    height: 80px;
+
 }

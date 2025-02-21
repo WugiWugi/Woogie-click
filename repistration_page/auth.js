@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Проверка email и пароля перед перенаправлением
             if (email.match(/^[a-zA-Z0-9._%+-]+@(gmail\.com|mail\.ru)$/) && password.length >= 5) {
                 console.log("Redirecting..."); // Проверка в консоли
-                window.location.href = "https://getbootstrap.com/"; // Перенаправление
+                window.location.href = "./main/main.html"; // Перенаправление
             } else {
                 alert("Введите корректный email и пароль!");
             }
