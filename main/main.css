@@ -1,3 +1,59 @@
-body{
-    background-color: black;
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2148c0;
+}
+
+
+
+.container {
+    width: 1320px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 50px 10px rgba(20, 61, 243, 0.3);
+    margin: 10% 0% 10% 0%;
+    background-color: white;
+    padding: 20px;
+}
+
+.logo_center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    color: #2148c0;
+}
+
+.header_links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #2148c0;
+}
+
+.Name {
+    color: #2148c0;
+    font-weight: 900;
+}
+
+.Slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.sizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 50px 0px 50px 0px;
 }
